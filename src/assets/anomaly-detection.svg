@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="400" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- 배경 -->
+  <rect width="800" height="400" fill="#f8f9fa"/>
+  
+  <!-- 정상 제품 -->
+  <g transform="translate(50,50)">
+    <rect width="300" height="300" fill="white" stroke="#4f46e5" stroke-width="2"/>
+    <text x="20" y="30" font-family="Arial" font-size="16" fill="#1e293b">정상 제품</text>
+    <circle cx="150" cy="150" r="100" fill="#e2e8f0"/>
+    <rect x="125" y="125" width="50" height="50" fill="#6366f1"/>
+  </g>
+  
+  <!-- 불량 제품 -->
+  <g transform="translate(450,50)">
+    <rect width="300" height="300" fill="white" stroke="#dc2626" stroke-width="2"/>
+    <text x="20" y="30" font-family="Arial" font-size="16" fill="#1e293b">불량 감지</text>
+    <circle cx="150" cy="150" r="100" fill="#e2e8f0"/>
+    <rect x="125" y="125" width="50" height="50" fill="#dc2626"/>
+    <!-- 히트맵 오버레이 -->
+    <rect x="100" y="100" width="100" height="100" fill="#dc2626" opacity="0.3"/>
+    <!-- 경고 표시 -->
+    <g transform="translate(180,70)">
+      <circle r="20" fill="#dc2626"/>
+      <text x="-5" y="7" font-family="Arial" font-size="20" fill="white">!</text>
+    </g>
+  </g>
+  
+  <!-- 설명 텍스트 -->
+  <text x="400" y="380" font-family="Arial" font-size="14" fill="#4b5563" text-anchor="middle">
+    히트맵 기반 이상 감지 시각화
+  </text>
+</svg> 

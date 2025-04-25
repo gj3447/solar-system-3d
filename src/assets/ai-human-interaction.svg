@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="tech-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6366F1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#A855F7;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Human figure -->
+  <g transform="translate(250,200)">
+    <circle cx="0" cy="0" r="40" fill="#6366F1" opacity="0.8"/>
+    <path d="M-20,80 L20,80 L20,160 L-20,160 Z" fill="#6366F1" opacity="0.8"/>
+    <!-- Arms -->
+    <path d="M20,100 L70,120" stroke="#6366F1" stroke-width="20" stroke-linecap="round"/>
+    <path d="M-20,100 L-70,120" stroke="#6366F1" stroke-width="20" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Robot/AI figure -->
+  <g transform="translate(550,200)">
+    <rect x="-40" y="-40" width="80" height="80" rx="10" fill="url(#tech-gradient)"/>
+    <rect x="-30" y="60" width="60" height="100" fill="url(#tech-gradient)"/>
+    <!-- Arms -->
+    <path d="M-40,80 L-90,100" stroke="url(#tech-gradient)" stroke-width="20" stroke-linecap="round"/>
+    <path d="M40,80 L90,100" stroke="url(#tech-gradient)" stroke-width="20" stroke-linecap="round"/>
+    <!-- Circuit pattern -->
+    <path d="M-20,-20 L20,-20 L20,20 L-20,20 Z" fill="none" stroke="#fff" stroke-width="2"/>
+    <circle cx="0" cy="0" r="5" fill="#fff"/>
+  </g>
+  
+  <!-- Connection lines -->
+  <g stroke="#A855F7" stroke-width="2" stroke-dasharray="5,5">
+    <path d="M320,200 L480,200">
+      <animate attributeName="stroke-dashoffset" values="10;0" dur="1s" repeatCount="indefinite"/>
+    </path>
+    <path d="M320,220 L480,220">
+      <animate attributeName="stroke-dashoffset" values="10;0" dur="1s" repeatCount="indefinite"/>
+    </path>
+    <path d="M320,240 L480,240">
+      <animate attributeName="stroke-dashoffset" values="10;0" dur="1s" repeatCount="indefinite"/>
+    </path>
+  </g>
+  
+  <!-- Data particles -->
+  <g fill="#A855F7">
+    <circle cx="400" cy="200" r="3">
+      <animate attributeName="cx" values="320;480;320" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="400" cy="220" r="3">
+      <animate attributeName="cx" values="480;320;480" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="400" cy="240" r="3">
+      <animate attributeName="cx" values="320;480;320" dur="3s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg> 
