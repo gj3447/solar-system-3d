@@ -50,5 +50,6 @@
   },
   "devDependencies": {
     "@types/three": "^0.152.1"
-  }
+  },
+  "license": "SEE LICENSE IN LICENSE"
 }
